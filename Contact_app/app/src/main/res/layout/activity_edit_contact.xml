@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditContactActivity">
+
+    <TextView
+        android:id="@+id/backToDisplayContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:focusable="auto"
+        android:textColor="#2A5BF4"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:text="Mégsem"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/backToDisplayContact"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="Kontakt szerkesztése"
+        android:textSize="26dp" />
+
+    <EditText
+        android:id="@+id/editLastNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_alignEnd="@id/textView2"
+        android:ems="10"
+        android:hint="Vezetéknév"
+
+        />
+
+    <EditText
+        android:id="@+id/editFirstNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editLastNameEditText"
+        android:layout_alignEnd="@id/editLastNameEditText"
+        android:ems="10"
+        android:hint="Keresztnév"
+
+        />
+
+    <EditText
+        android:id="@+id/editPhoneNumberNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editFirstNameEditText"
+        android:layout_alignEnd="@id/editFirstNameEditText"
+        android:ems="10"
+        android:hint="Telefonszám"
+
+        />
+
+    <EditText
+        android:id="@+id/editEmailAddressEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editPhoneNumberNameEditText"
+        android:layout_alignEnd="@id/editPhoneNumberNameEditText"
+        android:ems="10"
+        android:hint="Email cím"
+
+        />
+
+    <EditText
+        android:id="@+id/editAddressEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editEmailAddressEditText"
+        android:layout_alignEnd="@id/editEmailAddressEditText"
+        android:ems="10"
+        android:hint="Lakcím"
+
+        />
+
+    <EditText
+        android:id="@+id/editBirthdayEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editAddressEditText"
+        android:layout_alignEnd="@id/editAddressEditText"
+        android:ems="10"
+        android:hint="Születésnap"
+
+        />
+
+    <Button
+        android:id="@+id/editRelationshipButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editBirthdayEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Kapcsolat kiválasztása" />
+
+    <Button
+        android:id="@+id/editContactButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editRelationshipButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Kész" />
+
+
+</RelativeLayout>

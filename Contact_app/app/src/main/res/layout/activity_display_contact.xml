@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayContactActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/backToMain"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+    <TextView
+        android:id="@+id/editActivityButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Szerkesztés"
+        android:textColor="#2A5BF4"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editActivityButton"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:text="Név"
+        android:layout_marginTop="30dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/phoneNumberTextView"
+        android:layout_below="@id/nameTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="15dp"
+        android:text="Telefonszám"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailAddressTextView"
+        android:layout_below="@id/phoneNumberTextView"
+        android:layout_alignStart="@id/phoneNumberTextView"
+        android:text="Email cím"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addressTextView"
+        android:layout_below="@id/emailAddressTextView"
+        android:layout_alignStart="@id/emailAddressTextView"
+        android:text="Lakcím"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/birthdayTextView"
+        android:layout_below="@id/addressTextView"
+        android:layout_alignStart="@id/addressTextView"
+        android:text="Születésnap"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relationshipTextView"
+        android:layout_below="@id/birthdayTextView"
+        android:layout_alignStart="@id/birthdayTextView"
+        android:text="Kapcsolat"
+        android:layout_marginTop="15dp"
+        />
+
+    <Button
+        android:id="@+id/callButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relationshipTextView"
+        android:layout_centerHorizontal="true"
+        android:text="Hívás" />
+
+
+
+
+</RelativeLayout>
