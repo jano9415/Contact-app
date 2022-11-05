@@ -32,6 +32,7 @@ public class AddContactActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_contact);
+        getSupportActionBar().hide();
 
         context = this;
         contactRepository = new ContactRepository(context);
@@ -85,6 +86,7 @@ public class AddContactActivity extends AppCompatActivity {
         });
 
         //Új kontakt hozzáadása
+        //Visszatérés a Main activity-re
         addContactButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -102,8 +104,6 @@ public class AddContactActivity extends AppCompatActivity {
                     contactRepository.addContact(actualContact);
                     startActivity(new Intent(context , MainActivity.class));
                 }
-
-
 
             }
         });

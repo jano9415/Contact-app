@@ -28,6 +28,7 @@ public class EditContactActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_contact);
+        getSupportActionBar().hide();
 
         context = this;
         contactRepository = new ContactRepository(context);

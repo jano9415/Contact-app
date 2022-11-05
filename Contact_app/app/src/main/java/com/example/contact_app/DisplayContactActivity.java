@@ -30,6 +30,7 @@ public class DisplayContactActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_contact);
+        getSupportActionBar().hide();
 
         context = this;
         contactRepository = new ContactRepository(context);

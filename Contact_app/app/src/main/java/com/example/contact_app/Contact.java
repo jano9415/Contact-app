@@ -1,5 +1,6 @@
 package com.example.contact_app;
 
+import java.util.Comparator;
 import java.util.Date;
 
 public class Contact {
@@ -110,4 +111,16 @@ public class Contact {
     public void setRelationship(String relationship) {
         this.relationship = relationship;
     }
+
+    //Rendezés vezetéknév szerint növekvő sorrendbe
+    public static Comparator<Contact> lastnameComparator = new Comparator<Contact>() {
+        @Override
+        public int compare(Contact contact1, Contact contact2) {
+            String lastname1 = contact1.getLastName();
+            String lastname2 = contact2.getLastName();
+
+
+            return lastname1.compareTo(lastname2);
+        }
+    };
 }

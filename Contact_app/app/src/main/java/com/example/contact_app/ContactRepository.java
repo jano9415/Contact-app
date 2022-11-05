@@ -9,7 +9,6 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
-import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -206,12 +205,10 @@ public class ContactRepository extends SQLiteOpenHelper {
     }
 
     //Kontaktok keresése vezetéknév vagy keresztnév szerint.
-    public List<Contact> findByLastName(String name){
+    public List<Contact> findByName(String name){
         Contact actualContact;
         List<Contact> contacts = new ArrayList<>();
         SQLiteDatabase db = this.getReadableDatabase();
-
-        //String query = "SELECT * FROM " + TABLE_NAME + " WHERE " + COLUMN_LASTNAME + " LIKE " + "'%" + lastName + "%'";
 
         String query = "SELECT * FROM " + TABLE_NAME + " WHERE " + "(" + COLUMN_LASTNAME + " LIKE " + "'%" + name + "%'" + "OR " + COLUMN_FIRSTNAME + " LIKE " + "'%" + name + "%')";
 
